@@ -3,11 +3,13 @@
 //     - Напишіть код,  котрий :
 // -- отримує текст з параграфа з id "content"
 
-// let content = document.getElementById('content')
-// console.log(content);
+//  let content_ = document.getElementById('content');
+// const content = content_.innerText;
+//  console.log(content);
 //
-// let content2 = document.querySelector('#content');
-// console.log(content2);
+// let content2_ = document.querySelector('#content');
+// const content2 = content2_.innerText;
+//  console.log(content2);
 
 
 
@@ -66,7 +68,10 @@
 // const changeAllQ = document.querySelector('*'); // чи можна подібне зробити з getElement
 // changeAllQ.style.color = 'red';
 
-// що означає один слеш /
+// const changeAllE = document.getElementsByTagName('body');
+// for (const changeAllEElement of changeAllE) {
+//  changeAllEElement.style.color = 'red';
+// }
 
 
 
@@ -87,10 +92,10 @@
 
 // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
 
-// const listRules = document.getElementsByClassName('fc_rules');
-// for (const listRule of listRules) {
-//     console.log(listRule);
-// }
+const listRules = document.getElementById('rules');
+
+console.log(listRules.classList)
+
 
 ////????????????????????????????????????????????????????????????????????????????????
 //
